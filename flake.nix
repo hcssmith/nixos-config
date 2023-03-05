@@ -27,6 +27,9 @@
 
     hosts.arnor.modules = [
           ./hosts/arnor
+          ./modules/i18n
+          ./modules/sound
+          ./modules/uefi
         ];
   };
 }
