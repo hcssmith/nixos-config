@@ -1,4 +1,5 @@
-{pkgs, ...}: {
+{pkgs, ...}: 
+{
     imports = [./hardware-configuration.nix];
 
     boot.loader = {
@@ -67,9 +68,11 @@
     systemd.services."autovt@tty1".enable = false;
 
     users.users.hcssmith = {
-    isNormalUser = true;
-    description = "Hallam Smith";
-    extraGroups = [ "networkmanager" "wheel" ];
+        isNormalUser = true;
+        description = "Hallam Smith";
+        extraGroups = [ "networkmanager" "wheel" ];
+
+    };
 
     system.stateVersion = "22.11";
 
@@ -79,6 +82,4 @@
         experimental-features = nix-command flakes
         '';
     };
-  };
 }
-    
