@@ -17,7 +17,7 @@
   utils.lib.mkFlake {
     inherit self inputs;
 
-    channelsCongih.allowUnfree = true;
+    channelsCongig.allowUnfree = true;
 
     sharedOverlays = [
       nur.overlay
