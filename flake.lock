@@ -40,11 +40,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1678225938,
-        "narHash": "sha256-//MurUXCZ9NQCkjSeI9nWO1yoi3TdzuJoM527UcteLU=",
+        "lastModified": 1678668196,
+        "narHash": "sha256-ANY3uVCj36yGukRiCTkACB/mtYkR8VQU3f8nXl9IhSY=",
         "owner": "hcssmith",
         "repo": "my-nix-overlay",
-        "rev": "ceb9455286f9a633b896ddd808ef1e57373baabb",
+        "rev": "94b9f1ee597e6fd91424d3324062948209edee37",
         "type": "github"
       },
       "original": {

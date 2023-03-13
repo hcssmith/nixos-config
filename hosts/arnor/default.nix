@@ -1,4 +1,4 @@
-{pkgs, ...}: 
+{pkgs, ...}:
 {
     imports = [./hardware-configuration.nix];
 
@@ -10,17 +10,22 @@
     time.timeZone = "Europe/London";
 
     services.xserver.enable = true;
-    
+
     # Enable the GNOME Desktop Environment.
     services.xserver.displayManager.gdm.enable = true;
+    services.xserver.windowManager.dwm = {
+    	enable = true;
+    	package = dwm-hcs;
+    };
     services.xserver.desktopManager.gnome.enable = true;
+
     services.xserver = {
         layout = "gb";
         xkbVariant = "";
     };
 
     console.keyMap = "uk";
-    
+
     # Enable sound with pipewire.
 
     # Auto login stuff
