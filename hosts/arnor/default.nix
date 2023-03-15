@@ -15,7 +15,7 @@
     services.xserver.displayManager.gdm.enable = true;
     services.xserver.windowManager.dwm = {
     	enable = true;
-    	package = dwm-hcs;
+    	package = pkgs.dwm-hcs;
     };
     services.xserver.desktopManager.gnome.enable = true;
 
